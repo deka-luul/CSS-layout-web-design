@@ -1,0 +1,31 @@
+h1 , p {
+
+   display: inline;
+}
+ span{
+    display: block;
+
+ }
+ div{
+    display: inline-block;
+    background-color: rgb(141, 204, 204);
+    width: 200px;
+    height: 100px;
+ }
+ .flex-container{
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   background-color: deepskyblue;
+ }
+    .flex-item{
+        background-color: rgb(204, 141, 204);
+        width: 100px;
+        height: 20vh;
+        margin: 10px;
+        padding: 20px;
+        border: 2px solid black;
+    }
+ 
+ 
