@@ -1,31 +1,72 @@
-h1 , p {
-
-   display: inline;
+h1, p{
+    display: inline;
 }
- span{
-    display: block;
 
- }
- div{
+span {
+    display: block;
+}
+
+.div-inline{
     display: inline-block;
-    background-color: rgb(141, 204, 204);
-    width: 200px;
+    width: 100px;
     height: 100px;
- }
- .flex-container{
+    background-color: lightgreen;
+}
+
+img{
+    float: right; /* float the image to the right */
+}
+
+.flex-container {
     display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   background-color: deepskyblue;
- }
-    .flex-item{
-        background-color: rgb(204, 141, 204);
-        width: 100px;
-        height: 20vh;
-        margin: 10px;
-        padding: 20px;
-        border: 2px solid black;
-    }
- 
- 
+    justify-content: center; /* align items horizontally */
+    align-items: center; /* align items vertically */
+    height: 100vh; 
+    background: lightblue;
+}
+
+.flex-item {
+    background-color: lightcoral;
+    padding: 20px;
+    margin: 10px; 
+    width: 300px;  
+    border: 1px solid black;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+    height: 100vh;
+}
+
+header{ grid-area: header; background: lightblue; }
+nav{ grid-area: nav; background: lightgreen; }
+main{ grid-area: main; background: lightpink; }
+footer{ grid-area: footer; background: lightgray; }
+
+/* absolute positioning */
+.card {
+    position:relative;
+    width: 320px;
+    padding:24px;
+    border:1px solid black;
+    border-radius: 12px;
+    background-color: bisque;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding:4px 8px;
+    font-size:12px;
+    background:crimson;
+    color:white;
+    border-radius: 999px;
+}
